@@ -17,7 +17,7 @@ body {
 header {
   min-height: 100vh;
   background: white;
-  background: url(../images/hero++.png) no-repeat;
+  background: url(../images/hero++-min.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -176,7 +176,7 @@ header {
   justify-content: space-around;
   /* background: linear-gradient(-45deg, #eb511e, #f9a61a); */
   /* background: black; */
-  background: url("../images/footer.jpg");
+  background: url("../images/footer-min.jpg");
   background-position: center;
   background-size: cover;
   color: white;
@@ -493,6 +493,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.card__face--front:nth-of-type(2)::after{
+  content: "\f1b8";
 }
 .card__face--front h3 {
   margin-top: 30px;
