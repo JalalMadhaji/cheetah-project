@@ -22,7 +22,7 @@ h5 {
   font-family: "GE SS Two Medium";
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 header {
   min-height: 100vh;
@@ -61,7 +61,7 @@ header {
 }
 .menu nav {
   width: 50%;
-  transition: all 0.4s ease !important;
+  transition: left 0.4s ease !important;
 }
 .menu nav ul {
   list-style: none;
@@ -214,7 +214,7 @@ header {
   font-size: 14px;
 }
 .contctUs li:nth-of-type(2),
-.contctUs li:nth-of-type(3){
+.contctUs li:nth-of-type(3) {
   font-family: tahoma;
 }
 /* .contctUs li:hover {
@@ -733,7 +733,8 @@ header {
     display: block;
   }
   .menu nav {
-    right: -100%;
+    left: -100%;
+    display: none;
   }
 }
 
@@ -756,7 +757,8 @@ header {
   }
 }
 .menu nav.open-nav {
-  right: 0;
+  left: 0;
+  display: block;
 }
 @media screen and (max-width: 600px) {
   .model {
