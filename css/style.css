@@ -4,12 +4,22 @@
   --third-color: #f9a61a;
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
+@import url("../fonts/GE_SS_Two_Light-1.otf");
+@import url("../fonts/GE_SS_Two_Medium.otf");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, tahoma;
+  font-family: "GE SS Two Light", Montserrat, tahoma;
   scroll-behavior: smooth;
+  direction: rtl;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "GE SS Two Medium";
 }
 body {
   overflow-x: hidden;
@@ -97,16 +107,16 @@ header {
 .hero {
   position: absolute;
   top: 60%;
-  left: 10%;
+  right: 10%;
   transform: translateY(-50%);
   color: white;
   line-height: 1.8;
   font-family: poppins !important;
 }
 .hero article {
-  width: 60%;
-  padding-left: 20px;
-  border-left: 4px solid #aaa;
+  width: 70%;
+  padding-right: 20px;
+  border-right: 4px solid #aaa;
 }
 .hero h1 {
   font-size: 30px;
@@ -180,7 +190,7 @@ header {
   background-position: center;
   background-size: cover;
   color: white;
-  text-align: left;
+  text-align: right;
 }
 .contctUs {
   width: 40%;
@@ -197,9 +207,9 @@ header {
 .contctUs li {
   list-style: none;
   padding: 10px 0;
-  padding-left: 10px;
-  border-left: 3px solid #c52429;
-  margin: 5px auto;
+  padding-right: 10px;
+  border-right: 3px solid #c52429;
+  margin: 10px auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
   font-size: 14px;
 }
@@ -207,7 +217,7 @@ header {
   color: orange;
 } */
 .contctUs li svg {
-  margin-right: 10px;
+  margin-left: 10px;
   color: #c52429;
 }
 .email {
@@ -275,6 +285,9 @@ header {
   width: 600px;
   margin: 30px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .about {
   width: 100%;
@@ -494,17 +507,18 @@ header {
   justify-content: center;
   align-items: center;
 }
-.card__face--front:nth-of-type(2)::after{
+.card__face--front:nth-of-type(2)::after {
   content: "\f1b8";
 }
 .card__face--front h3 {
   margin-top: 30px;
+  color: #c52429;
 }
 
 .card__face--back {
   transform: rotateY(180deg);
   padding: 20px;
-  text-align: left;
+  text-align: right;
   font-size: 90%;
   color: black;
   display: flex;
@@ -512,6 +526,7 @@ header {
   align-items: center;
 }
 .card p {
+  margin: 10px auto;
   font-weight: 200;
   line-height: 1.7;
 }
