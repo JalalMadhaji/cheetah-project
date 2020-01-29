@@ -4,8 +4,8 @@
   --third-color: #f9a61a;
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap");
-@import url("../fonts/GE_SS_Two_Light-1.otf");
-@import url("../fonts/GE_SS_Two_Medium.otf");
+@import url("fonts/GE_SS_Two_Light-1.otf");
+@import url("fonts/GE_SS_Two_Medium.otf");
 * {
   margin: 0;
   padding: 0;
